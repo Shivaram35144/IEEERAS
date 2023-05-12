@@ -30,5 +30,5 @@ digitalWrite(trig, HIGH);			// send uv signal
 delayMicroseconds(10); 
 digitalWrite(trig, LOW);			// stop sending uv
 dur = pulseIn(echo, HIGH);		//returns duration
-return (dur/30);						// convert the time to dist
+return (dur/60);						// convert the time to dist
 }
